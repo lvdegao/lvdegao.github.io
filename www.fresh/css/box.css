@@ -1,0 +1,151 @@
+#box {
+	width: 1260px;
+	padding-top: 80px;
+	margin: 0 auto;
+}
+#yulu {
+	height: 230px;
+	width: 100%;
+	margin-top: 30px;
+	background-color: #FFF;
+}
+#yulu-1 {
+	height: 50px;
+	width: 100%;
+	background-image: url(../images/yulu.png);
+}
+.yunu {
+	float: left;
+	height: 180px;
+	width: 250px;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	margin-left: 20px;
+}
+h3 {
+	color: #09aa83;
+	line-height: 55px;
+	padding-left: 18px;
+}
+  p{line-height:25px; }/*letter-spacing:1px; 文字字间距  line-height:18px; 文字行间距*/
+#wenxing {
+	height: 350px;
+	width: 100%;
+	margin-top: 20px;
+}
+#wenxing-1 {
+	float: left;
+	height: 100%;
+	width: 620px;
+	margin-right: 10px;
+}
+#wenxing-1-1 {
+	height: 100%;
+	width: 310px;
+	float: left;
+}
+#wenxing-1-2 {
+	height: 100%;
+	width: 310px;
+	float: right;
+}
+#wenxing-1-2-top {
+	background-color: #FFF;
+	height: 145px;
+	width: 100%;
+}
+
+#wenxing-1-2-left {
+	background-color: #0FF;
+	float: left;
+	height: 204px;
+	width: 155px;
+}
+#wenxing-1-2-right {
+	background-color: #00F;
+	float: right;
+	height: 204px;
+	width: 155px;
+}
+#wenxing-2 {
+	float: left;
+	height: 100%;
+	width: 620px;
+	margin-left: 10px;
+}
+#wenxing-2-1 {
+	height: 100%;
+	width: 310px;
+	float: left;
+}
+#wenxing-2-1-top {
+	background-color: #F00;
+	height: 145px;
+	width: 100%;
+}
+#wenxing-2-1-left {
+	background-color: #0FF;
+	float: left;
+	height: 204px;
+	width: 155px;
+}
+#wenxing-2-1-right {
+	background-color: #00F;
+	float: right;
+	height: 204px;
+	width: 155px;
+}
+#wenxing-2-2 {
+	height: 100%;
+	width: 310px;
+	float: right;
+}
+
+#yingyue {
+	height: 380px;
+	width: 100%;
+	margin-top: 30px;
+}
+
+#tupian {
+	height: 400px;
+	width: 100%;
+	margin-top: 30px;
+	background-color: #FFF;
+}
+#tupian-1 {
+	height: 55px;
+	width: 100%;
+	background-image: url(../images/yulu.png);
+}
+#tupian-2 {
+	height: 345px;
+	width: 100%;
+}
+ul {
+	list-style-type: none;
+}
+#tupian-2 ul {
+	display: flex;/*开启弹性盒子模型*/
+	flex-wrap: wrap;/*强制性换行*/
+	justify-content: space-around;/*横向上内部元素排列方式 环绕 均分*/
+	align-items: center;/*纵向上内部元素均分*/
+	height: 100%;
+	width: 100%;
+}
+#tupian-2 ul li {
+	height: 130px;
+	width: 220px;
+	box-shadow: 0 0 3px #222;
+}
+#zonghe {
+	margin-top:10px;
+	height: 400px;
+	width: 100%;
+}
+#dibu {
+	height: 230px;
+	width: 100%;
+	margin-top: 20px;
+	background-image: url(../images/dibu.png);
+}
