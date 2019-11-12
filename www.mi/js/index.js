@@ -21,13 +21,10 @@
 //          }
 //      }
 // 版权声明
-window.onload = function () {
-    var shengming = document.getElementById("header-search-shengming");
-    shengming.innerHTML = "<marquee onmouseover=stop() onmouseout=start()>特别声明❗❗❗本网站非小米官网 ,纯属个人模仿小米官网制作。本网站所列材料，除特殊说明，所有材料均出自小米官网,如有侵权,请告知删除。☏:452566060</marquee>";
-}
+
 $(function () {
     // 版权声明
-    $("#header-search-shengming").addClass("header-search-shengming");//为版权声明添加CSS
+   
     $(".search-form").hover(
         function () {
             $(".header-search-shengming").css("display", "none");
