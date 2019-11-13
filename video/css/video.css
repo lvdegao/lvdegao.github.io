@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-05-10 21:41:12
+ * @version $Id$
+ */
+.video{
+  height:600px;
+  width: 1200px;
+  margin:30px auto;
+}
+.VF{
+  height: 500px;
+  margin:0 auto;
+  display:block;
+  box-shadow:1px 3px 3px 4px #f4f4f4f4;
+}
+.explain{
+  padding-top:25px;
+  text-align:center;
+}
