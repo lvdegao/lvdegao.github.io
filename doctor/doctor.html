@@ -243,6 +243,7 @@
                         <h2>北京</h2>
                     </div>
                 </div>
+              
                 <!-- 学校详情 -->
                 <div class="school">
                     <!-- 左表格 -->
@@ -464,6 +465,12 @@
             $(this).siblings().removeClass('region_ul_li');
             $(this).addClass("region_ul_li");
         })
+     
+        $('.region_ul li').click(function(){
+            $('.sele_center h2').text($(this).text());
+        })
+               
+               
     </script>
 </body>
 
