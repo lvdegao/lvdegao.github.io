@@ -1,0 +1,547 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    height: 12rem;
+    width: 100%;
+    background: url(../images/header_bg.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.header_nav {
+    height: 2rem;
+    width: 20rem;
+    margin-top: 9.5rem;
+    margin-left: 3rem;
+    color: #ffc400;
+    line-height: 2rem;
+}
+
+.header_nav a {
+    color: #ffc400;
+    font-weight: 600;
+}
+
+body {
+    background: #3168e3;
+}
+
+
+/* 内容主题main */
+
+#container {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fffef9;
+    border-radius: 0.85rem;
+    padding-bottom: 2rem;
+    overflow:hidden;
+}
+
+#container::before {
+    content: "";
+    display: block;
+    overflow: hidden;
+}
+
+
+/* 尾部样式 */
+
+#footer {
+    width: 100%;
+    background: #0d5db1;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.footer_text {
+    font-size: 0.75rem;
+}
+
+.column_title {
+    height: 6.2rem;
+    width: 100%;
+    margin: 2rem auto;
+    background: url(../images/column_title.png);
+    background-size: 100% 100%;
+    /* text-align: center; */
+    line-height: 6.2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    padding-right: 1rem;
+}
+
+.column_title h2 {
+    margin-left: 31%;
+}
+
+
+/* 选拔方方式样式 */
+
+.selectivity {
+    padding-bottom: 2rem;
+    background: #fff;
+    border-radius: 0.85rem;
+    box-shadow: 0rem 1rem 3rem #ddd;
+}
+
+.selectivity_ul {
+    margin: auto;
+    width: 96%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(241, 214, 125, 0.4);
+}
+
+.selectivity_ul li {
+    width: 7rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.active {
+    color: #fff;
+    background: #ffc400;
+    border-top-left-radius: 0.45rem;
+    border-top-right-radius: 0.45rem;
+    position: relative;
+}
+
+.active::after {
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 44%;
+    bottom: 0%;
+    border: 0.6rem solid;
+    border-color: transparent transparent #fff;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.way_ul li {
+    border-bottom: 1px dashed #ccc;
+    line-height: 3rem;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* <!-- 博士研究生报考流程 --> */
+
+.title_box h2 {
+    margin-left: 27%;
+}
+
+.flow_path {
+    height: 60rem;
+    position: relative;
+    border: 1px solid #fff;
+    background: url(../images/flow_path.png);
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.flow_top {
+    height: 30rem;
+}
+
+.flw_h {
+    height: 3rem;
+    width: 11rem;
+    margin: 1rem auto;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    padding-left: 2rem;
+}
+
+.jueti {
+    height: 22rem;
+    width: 100%;
+    margin-top: 1.7rem;
+}
+
+.jueti_g {
+    height: 3.5rem;
+    width: 6rem;
+    line-height: 1.5rem;
+    /* border: 1px solid red; */
+    float: left;
+}
+
+.jueti_left {
+    margin: 1.2rem 1rem 1rem 2rem;
+}
+
+.jueti_center {
+    margin: 1.2rem 1rem 1rem 4.2rem;
+}
+
+.jueti_right {
+    margin: 1.2rem 1rem 1rem 4.2rem;
+}
+
+.jueti_left_2 {
+    margin: 3.8rem 1rem 1rem 2.4rem;
+}
+
+.jueti_center_2 {
+    margin: 4rem 1rem 1rem 4rem;
+}
+
+.jueti_right_2 {
+    margin: 4rem 1rem 1rem 4.2rem;
+}
+
+.jueti_left_3 {
+    margin: 3.6rem 1rem 1rem 2.2rem;
+}
+
+.jueti_center_3 {
+    margin: 3.6rem 1rem 1rem 4.2rem;
+}
+
+.fl_h {
+    padding-left: 0rem;
+}
+
+.flow_bum {
+    height: 29rem;
+    margin-top: 1rem;
+}
+
+@media screen and (width: 375px) {
+    .jueti {
+        margin-left: .5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .title_box h2 {
+        margin-left: 24%;
+    }
+    .jueti_left {
+        margin: 1.5rem 0rem 0rem 1.5rem;
+    }
+    .jueti_center {
+        margin: 1.5rem 0rem 0rem 4rem;
+    }
+    .jueti_right {
+        margin: 1.5rem 0rem 0rem 3.5rem;
+    }
+    .jueti_left_2 {
+        margin: 5rem 0rem 0rem 1.6rem;
+    }
+    .jueti_center_2 {
+        margin: 5rem 0rem 0rem 3.5rem;
+    }
+    .jueti_right_2 {
+        margin: 5rem 0rem 0rem 4rem;
+    }
+    .jueti_left_3 {
+        margin: 4.5rem 0rem 0rem 1.5rem;
+    }
+    .jueti_center_3 {
+        margin: 4.5rem 0rem 0rem 3.8rem;
+    }
+}
+
+
+/* 左边小台灯 */
+
+.taideng {
+    position: absolute;
+    left: 5%;
+    top: 0%;
+    height: 6rem;
+    width: 6rem;
+    background: url(../images/taideng.png);
+    background-size: 100% 100%;
+}
+
+
+/* 右边书籍 */
+
+.shuji {
+    position: absolute;
+    right: 5%;
+    bottom: 0%;
+    height: 6rem;
+    width: 6rem;
+    background: url(../images/shuji.png);
+    background-size: 100% 100%;
+}
+
+
+/* 博士通关策略 */
+
+.doctor_tg {
+    height: 100rem;
+    background: url(../images/bstgcl.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.doctor_tg::before {
+    content: "";
+    display: block;
+    overflow: hidden;
+}
+
+.doctor {
+    height: 15rem;
+    width: 24rem;
+    margin: 5rem auto;
+}
+
+.doctor_h4 {
+    height: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.h4_iconf {
+    font-weight: 600;
+    color: #000;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 376px) {
+    .doctor {
+        width: 23rem;
+    }
+}
+
+.doctor span {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #fdfeff;
+    line-height: 2.2rem;
+}
+
+.doctor_2 {
+    margin: 9rem auto;
+    width: 25rem;
+    font-size: 1.2rem;
+}
+
+.doctor_3 {
+    margin: 6rem auto;
+}
+
+.doctor_4 {
+    margin: 11rem auto;
+    width: 20rem;
+}
+
+
+/* 左边树叶和花 */
+
+.shuye {
+    position: absolute;
+    left: -10%;
+    top: -5%;
+    height: 13rem;
+    width: 6rem;
+    background: url(../images/shuye.png);
+    background-size: 100% 100%;
+}
+
+.shuye_zhongjian {
+    position: absolute;
+    right: -5%;
+    top: 47%;
+    height: 14rem;
+    width: 7rem;
+    background: url(../images/shuye_zhongjian.png);
+    background-size: 100% 100%;
+}
+
+.zhuangshi {
+    position: absolute;
+    right: -5%;
+    bottom: -6%;
+    height: 11rem;
+    width: 7rem;
+    background: url(../images/zhuangshi.png);
+    background-size: 100% 100%;
+}
+
+.title_mulu {
+    background: url(../images/title_mulu.png);
+    background-size: 100% 100%;
+}
+
+.title_mulu h2 {
+    margin-left: 19%;
+}
+
+@media screen and (max-width: 375px) {
+    .title_mulu h2 {
+        font-size: 1.9rem;
+    }
+}
+
+
+/* 选择地区 */
+
+.selec_local {
+    height: 3rem;
+    width: 8rem;
+    margin: 0 auto;
+    text-align: center;
+    background: url(../images/selec_local.png);
+    background-size: 100% 100%;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 3rem;
+    font-weight: 600;
+}
+
+.region {
+    margin: 3rem 0;
+}
+
+.region_ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+    grid-gap: 1rem;
+}
+
+.region_ul li {
+    border: 1px solid #1ea745;
+    height: 3rem;
+    width: 5rem;
+    color: #1ea745;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    /* letter-spacing: 0.2rem; */
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    .region_ul li {
+        height: 2.5rem;
+        width: 4.5rem;
+        line-height: 2.5rem;
+    }
+}
+
+.region_ul_li {
+    background: #1ea745;
+    color: #fff000 !important;
+}
+
+
+/* <!-- 选择地区学校详细信息展示 --> */
+
+.appear {
+    margin: 3rem 0;
+}
+
+.appear_ul {
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 45% 25% 30%;
+    border-top: 0.075rem solid #558038;
+    border-left: 0.075rem solid #558038;
+}
+
+.appear_ul li {
+    border-right: 0.075rem solid #558038;
+    border-bottom: 0.075rem solid #558038;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+.turn_ul {
+    display: flex;
+    justify-content: center;
+}
+
+.tur_li {
+    color: #ffc400;
+}
+
+.turn_ul li {
+    padding: 0 0.35rem;
+    color: #68a7fa;
+    font-size: 1.6rem;
+}
+
+.last {
+    visibility: hidden;
+}
+
+.column_gjx h2 {
+    margin-left: 33%;
+}
+
+
+/* 考研工具箱 */
+
+.hold_all {
+    height: 8rem;
+    width: 24rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.hold_ul {
+    height: 8rem;
+    width: 24rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hold_ul img {
+    width: 100%;
+}
+
+.hold_ul li {
+    width: 7rem;
+    text-align: center;
+}
+
+.hold_ul li a {
+    font-size: 1.5rem;
+    color: #0d63b1;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
