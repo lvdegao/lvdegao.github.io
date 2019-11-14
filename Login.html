@@ -1,4 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=1226" />
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <title>April Entry</title>
+    <style>
+    @charset "UTF-8";
 /**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-05-15 16:11:39
+ * @version $Id$
+ */
+html,body {
+            margin:0px;
+            width:100%;
+            height:100%;
+            background:#000;
+            overflow:hidden;
+            position: relative;
+
+        }
+canvas{
+            position:absolute;
+            width:100%;
+            height:100%;
+        }
+ul{list-style:none;}
+a{text-decoration:none;}
+li{float:left;}
+#header{
+height:120px;
+background:rgba(0,0,0,0.7);
+position:relative;
+}
+.wrapper{
+    width:1200px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.leftsidebar{
+    height:120px;
+    width:500px;
+    float:left;
+}
+.list-logo{
+    height:120px;
+    width:500px;
+    margin-top:30px;
+}
+.list-logo li{
+    height:44px;
+    margin-left:20px;
+    text-align:center;
+    line-height: 44px;
+}
+.list-logo li:first-child{
+    margin-left:0;
+    color: rgb(2, 178, 181);
+    font-weight:600;
+    font-size:32px;
+}
+.logo-2{
+    font-weight:600;
+    font-size:32px;
+    color:rgb(204,204,204);
+}
+.logo-3{
+    padding:10px 0 0;
+    font-size:14px;
+    color: rgb(155, 155, 155);
+}
+.rightsidebar{
+    height:120px;
+    width:500px;
+    float:right;
+}
+.list_menu{
+    line-height:114px;
+    font-weight:600;
+    margin-left:10px;
+}
+.list_menu li{
+    margin-left:35px;
+}
+.list_menu li:first-child{
+    margin-left:0;
+}
+.list_menu li:first-child a{
+    color: #02b2b5;
+}
+.list_menu li a{
+    color: rgb(155, 155, 155);
+}
+.list_menu li a:hover{
+    color: #02b2b5;
+    transition:color .5s;
+}
+/*登录样式*/
+.shop{
+    position: absolute;
+    left:35%;
+    top:22%;
+    width:420px;
+    height:500px;
+    background:rgba(0,0,0,0.6);
+    border-radius:20px;
+}
+.loginbar{
+    width:400px;
+    height:450px;
+    margin:25px 32px;
+    color:rgba(255,255,255,.7);
+    line-height:35px;
+}
+.title{
+    color: rgb(2, 178, 181);
+    text-align:center;
+}
+.titleSpan{
+    font-weight:600;
+}
+.inbar{
+    width:220px;
+    height:30px;
+    outline:none;
+    border-radius:10px;
+    padding-left:10px;
+    background:rgba(61,61,58,.8);
+    font-size:16px;
+    color:rgba(255,255,255,.8);
+    border:0;
+}
+.login{
+    width:80px;
+    height: 40px;
+    margin:110px 60px;
+    background:rgba(61,61,58,.8);
+    font-weight: 600;
+    border:0;
+    border-radius:10px;
+}
+.loginbt{
+    width:80px;
+    height: 40px;
+    background:rgba(61,61,58,.8);
+    font-weight: 600;
+    border-radius:10px;
+    border:0;
+}
+.login:hover{
+    color:rgba(61,61,58,.8);
+    background:rgba(255,255,255,.7);
+    transform:translateY(-2px);
+}
+.loginbt:hover{
+    color:rgba(61,61,58,.8);
+    background:rgba(255,255,255,.7);
+    transform:translateY(-2px);
+}
+.modal{
+  position:fixed;
+  z-index:9999;
+  left:0;
+  top:0;
+  height:100vh;
+  width:100%;
+  overflow:hidden;
+  background:rgba(0,0,0,.5);
+  animation:modalopen 1s;
+  font-weight:600;
+}
+.modal-content{
+  background:#f4f4f4;
+  margin:15% auto;
+  width:80%;
+  box-shadow:0 5px 8px 0 rgba(0,0,0,.2),0 7px 20px 0 rgba(0,0,0,0.17);
+
+}
+.modal-header h2,.modal-footer h3{
+  margin:0;
+}
+.modal-header{
+  background-color:coral;
+  padding:15px;
+  color:#fff;
+  text-align:center;
+}
+.closeBtn{
+  color:#fff;
+  float:right;
+  font-size:30px;
+
+}
+.closeBtn:hover,.closeBtn:focus{
+  color:#000;
+  cursor:pointer; 
+}
+.modal-body{
+  padding:10px 20px;
+}
+.modal-footer{
+  background:coral;
+  padding:10px;
+  text-align:center;
+}
+.modal-footer a{
+  color:#333;
+}
+@keyframes modalopen{
+  from{opacity:0}
+  to{opacity:1}
+}
+    </style>
+</head>
+
+<body>
+    <!-- 弹窗说明部分开始 -->
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn">&times;</span>
+                <h2>本站作者有话要说</h2>
+            </div>
+            <div class="modal-body">
+                <p style="color:red;">特别说明，点击输入框就会有相应的账号密码提示，您可根据提示登录</p>
+                <p>由于作者只是学生,经济有限，租不起好的服务器,所以加载有点慢,还望大人<span style="color:red;">耐心等待</span>。无奈心者何以成大事。</p><br>
+                <p>In particular, click on the input box to have the corresponding account password prompt, you can
+                log in according to the prompt</p>
+            </div>
+            <div class="modal-footer">
+                <h3><a href="tencent://message/?uin=452566060&Site=&Menu=yes">点我联系管理员</a></h3>
+            </div>
+        </div>
+    </div>
+    <!-- 弹窗说明的js -->
+    <script>
+        // 弹框id
+        var modal = document.getElementById("simpleModal");
+        // X 的类名
+        var closeBtn = document.getElementsByClassName("closeBtn")[0];
+        closeBtn.addEventListener("click", closeModal);
+        window.addEventListener("click", outsiteClick);
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+        function outsiteClick(e) {
+            if (e.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+    <!-- 弹窗说明部分结束 -->
+    <canvas id="wind"></canvas>
+    <div id="header">
+        <div class="wrapper">
+            <div class="leftsidebar">
+                <ul class="list-logo">
+                    <li>April</li>
+                    <li class="logo-2">Story</li>
+                    <li class="logo-3"><b>|</b> &nbsp;&nbsp;&nbsp;小时不知剧中意,长大已是剧中人</li>
+                </ul>
+            </div>
+            <div class="rightsidebar">
+                <ul class="list_menu">
+                    <li style="color: #02b2b5;cursor:pointer;">登录</li>
+                    <li><a href="" title="请先登录">个人简历</a></li>
+                    <li><a href="" title="请先登录">个人作品</a></li>
+                    <li><a href="" title="请先登录">个人娱乐</a></li>
+                    <li><a href="" title="请先登录">人生轨迹</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="shop">
+        <form action="" class="loginbar">
+            <h2 class="title">Welcome April</h2>
+            <span class="titleSpan">姓名</span><br>
+            <input type="text" class="inbar" id="name"> &nbsp; <span class="sep" id="nameSpan"></span><br>
+            <span class="titleSpan">账号</span><br>
+            <input type="text" class="inbar" id="number"> &nbsp; <span class="sep" id="numberSpan"></span><br>
+            <span class="titleSpan">密码</span><br>
+            <input type="password" class="inbar" id="password"> &nbsp; <span class="sep" id="passwordSpan"></span><br>
+            <input type="submit" class=" login" value="登录" id="submit">
+            
+            <button class="loginbt"id="shortcut">一键登录</button>
+    
+        </form>
+    </div>
+    <script>
+        /**
  *
  * @authors Your Name (you@example.org)
  * @date    2019-05-15 16:00:13
@@ -423,3 +718,8 @@ window.onload = function() {
   };
 };
 // 背景特效结束
+
+    </script>
+</body>
+
+</html>
