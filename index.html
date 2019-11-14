@@ -299,19 +299,19 @@ position:relative;
  * @date    2019-05-15 16:00:13
  * @version $Id$
  */
-// function stop() {
-//     return false;
-// }
-// document.oncontextmenu = stop;
-// // document.oncontextmenu = function(){return false;}
-// document.onkeydown = function (e) {
-//     var currKey = 0, evt = e || window.event;
-//     currKey = evt.keyCode || evt.which || evt.charCode;
-//     if (currKey == 123) {
-//         window.event.cancelBubble = true;
-//         window.event.returnValue = false;
-//     }
-// }
+function stop() {
+    return false;
+}
+document.oncontextmenu = stop;
+// document.oncontextmenu = function(){return false;}
+document.onkeydown = function (e) {
+    var currKey = 0, evt = e || window.event;
+    currKey = evt.keyCode || evt.which || evt.charCode;
+    if (currKey == 123) {
+        window.event.cancelBubble = true;
+        window.event.returnValue = false;
+    }
+}
 // 背景特效
 window.onload = function() {
   function rgbToString(rgb) {
