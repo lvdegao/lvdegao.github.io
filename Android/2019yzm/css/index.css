@@ -1,0 +1,762 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+body {
+    background: #fbc23b;
+    /* height: 209rem; */
+    padding-bottom: 1rem;
+}
+
+#main {
+    width: 96%;
+    margin-top: 100%;
+    /* height: 213rem; */
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 376px) {
+    /* body {
+        height: 213rem;
+    }
+    #main {
+        height: 217rem;
+    } */
+}
+
+html {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* 头部样式开始 */
+
+#header {
+    height: 57%;
+    width: 100%;
+    overflow: hidden;
+    background: url(../images/header_bag.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hd_nationwide {
+    margin: auto;
+    width: 78%;
+    margin-top: 76%;
+    font-size: 0.62rem;
+    color: #fff;
+    line-height: 0.95rem;
+    text-indent: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 8%;
+    overflow: hidden;
+}
+
+#content {
+    width: 98%;
+    height: 100%;
+    background: url(../images/background.png);
+    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex: 1;
+    margin-top: 88%;
+}
+
+
+/* 活动动态层样式 */
+
+.activity {
+    margin-top: 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    text-align: center;
+    line-height: 36px;
+    background: #fff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position: relative;
+}
+
+.activ_li {
+    line-height: 1rem;
+}
+
+.activity_a1 {
+    background: #719ee2;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #fff !important;
+}
+
+.activity_a1::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.75rem solid;
+    border-color: transparent transparent #fff;
+    position: relative;
+    top: 12%;
+    left: 38%;
+    display: block;
+    z-index: 66;
+}
+
+.iconf {
+    font-size: 1.1rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.icon_color {
+    color: #fff;
+}
+
+
+/* 活动详情样式 */
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.amply {
+    width: 100%;
+    height: 16rem;
+    background: url(../images/huodong_1.png);
+    background-size: 100% 100%;
+    margin-top: -1%;
+    font-size: 0.95rem;
+    position: relative;
+    padding: .55rem 0;
+}
+.activity_huodong {
+    height: auto !important;
+}
+.virt {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 376px) {
+    .amply {
+        height: 15rem;
+        font-size: 0.85rem;
+        padding: .55rem 0;
+    }
+    .virt {
+        margin: -.2rem 0;
+        padding: .5rem 0;
+    }
+}
+
+.amply_neirong {
+    width: 98%;
+    overflow: hidden;
+}
+
+#trs_1311063247 {
+    margin: 0.5rem auto 0;
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+}
+
+#trs_1311063247 li {
+    padding: 0.6rem 0;
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#trs_1298351610 {
+    margin: 0.5rem auto 0;
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+}
+
+#trs_1298351610 li {
+    padding: 0.6rem 0;
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#trs_1307062137 {
+    margin: 0.5rem auto 0;
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+}
+
+#trs_1307062137 li {
+    padding: 0.6rem 0;
+    border-bottom: 1px dotted #ccc;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+/* 小方块样式 */
+
+.amply_sp {
+    background: #739fe0;
+    height: 0.75rem;
+    width: 0.75rem;
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+
+/* 查看更多样式 */
+
+.amplu_ul li:nth-child(6) {
+    border-bottom: none;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.am_a a {
+    color: #666;
+}
+
+
+/* 活动详情右边叶子 */
+
+.amply_yezi {
+    width: 15%;
+    height: 56%;
+    background: url(../images/yezi.png);
+    background-size: 100% 100%;
+    position: absolute;
+    right: -4%;
+    top: 50%;
+}
+
+
+/* 中国教育关注层 */
+
+.follow {
+    width: 100%;
+    height: 4rem;
+    background: url(../images/jiaoyu_bag.jpg);
+    background-size: 100% 100%;
+    margin-top: 4%;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.follow_a {
+    box-shadow: 0 0 0.2rem #333;
+    margin-right: 5%;
+    width: 18%;
+    height: 50%;
+    margin-top: 5%;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.follow_ic {
+    color: red;
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+
+
+/* 活动现场 */
+
+.activ_scene {
+    margin: 2rem 0;
+    height: 4rem;
+    width: 100%;
+}
+
+.activ_scene_bg {
+    height: 100%;
+    width: 53%;
+    margin: auto;
+    background: url(../images/hd_bag.png);
+    background-size: 100% 100%;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.amply_lunbo {
+    overflow: hidden;
+    width: 98%;
+    height: 96%;
+}
+
+
+/* 轮播图盒子 */
+
+.lunbo {
+    margin-top: 6px;
+    border: 1px solid pink;
+    height: 95%;
+    position: relative;
+}
+
+.lunbo img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lunbo_ul li {
+    display: none;
+}
+
+.lunbo_name {
+    height: 2rem;
+    width: 100%;
+    background: rgba(121, 163, 255, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 2rem;
+    color: #fff;
+    font-weight: 600;
+    text-indent: 1rem;
+    letter-spacing: 0.1rem;
+    z-index: 66;
+    display: none;
+}
+
+
+/* 活动资料下方  邀请函  */
+
+.invitation {
+    position: relative;
+}
+
+
+/* 左边笔袋样式 */
+
+.bidai_left {
+    position: absolute;
+    left: -3%;
+    top: -30%;
+    height: 6rem;
+    width: 5rem;
+    z-index: 66;
+    background: url(../images/bidai_left.png);
+    background-size: 100% 100%;
+}
+
+.invitation_ul {
+    height: 18rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.invitation_ul li {
+    height: 4rem;
+    width: 4rem;
+    margin: auto;
+    text-align: center;
+}
+
+.invitation_ul li a {
+    color: #666;
+    font-size: 0.75rem;
+}
+
+.invitation_ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 视频访谈上方 */
+
+.shipin_top {
+    height: 6rem;
+    border: 1px solid #79a3e1;
+    display: flex;
+    flex: 1;
+    margin-top: 1rem;
+}
+
+.interview {
+    height: 90%;
+    width: 46%;
+    border: 1px solid #79a3e1;
+    margin: auto;
+    padding: 0.1rem 0.1rem;
+}
+
+.interview img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 南京师范大学专访 */
+
+.amply_nanjing {
+    background: url(../images/nanjing_uni.png);
+    background-size: 100% 100%;
+    overflow: hidden;
+    height: 17rem;
+    z-index: 66;
+}
+
+.nanjing_university {
+    height: 2rem;
+    width: 100%;
+    background: #739fe0;
+    line-height: 1.5rem;
+    color: #fff;
+    display: flex;
+    text-indent: 0.2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nanjing_university a {
+    color: #fff;
+}
+
+.lunbo_nanjing {
+    height: 74%;
+    width: 98%;
+    margin: auto;
+    position: relative;
+}
+
+.lunbo_nanjing img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.lunbo_nj_ul {
+    width: 7rem;
+    position: absolute;
+    right: 2%;
+    bottom: -14%;
+    display: flex;
+    flex: 1;
+}
+
+.lunbo_nj_ul li {
+    margin: auto;
+    border-radius: 50%;
+    color: #fff;
+    background: #ccc;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1rem;
+}
+
+.lunbo_nj_ul li:nth-child(1) {
+    background: #fac75a;
+}
+
+
+/* 全国地图 */
+
+.nation_map {
+    height: 20rem;
+    width: 100%;
+}
+
+.nation_map img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 学校信息 黑龙江 */
+
+.school_news {
+    height: 8rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.sch_new_content {
+    height: 100%;
+    width: 75%;
+    background: #739fe0;
+    margin: auto;
+    border-radius: 6%;
+    box-shadow: 0 0 1rem #739fe0;
+}
+
+.sch_new {
+    position: absolute;
+    left: 12%;
+    top: 0;
+    display: none;
+}
+
+.school_name {
+    height: 2rem;
+    color: #fff;
+    line-height: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.school_logo {
+    height: 75%;
+    background: #fff;
+    border-bottom-right-radius: 0.55rem;
+    border-bottom-left-radius: 0.55rem;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 80%;
+    width: 5rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo_name {
+    height: 80%;
+    width: 15rem;
+    white-space: nowrap;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    color: #739fe0;
+    padding-top: 0.2rem;
+}
+
+
+/* 黑龙江院校左右按钮样式 */
+
+.school_news_btn {
+    display: block;
+    position: absolute;
+    top: 43%;
+    background: #739fe0;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 1rem #739fe0;
+}
+
+.btn_left {
+    left: -1%;
+}
+
+.btn_right {
+    right: 0%;
+}
+
+
+/* 参会院校下方样式 */
+
+.academy_ul {
+    height: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.huabei {
+    background: #fac14a !important;
+}
+
+.academy_ul li {
+    line-height: 2.4rem;
+    background: #739fe0;
+    border-radius: 0.3rem;
+    color: #fff;
+    text-align: center;
+    height: 2.4rem;
+    font-size: .85rem;
+}
+
+
+/* .academy_ul li:nth-child(6){
+  background:#fac14a;
+} */
+
+
+/* 院校名单 */
+
+.academy_list {
+    box-shadow: 0 0 1rem #739fe0;
+    background: #fff;
+    margin-top: 1.75rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.acad_list {
+    height: 80%;
+    width: 96%;
+    margin: 1rem auto 0 auto;
+}
+
+.acad_list_ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.acad_list_ul img {
+    width: 100%;
+    height: 100%;
+}
+
+.last_li {
+    border: none !important;
+}
+
+.acad_list_ul li {
+    height: 2rem;
+    width: 6.2rem;
+    border: 1px solid #ccc;
+}
+
+@media screen and (min-width: 376px) {
+    .acad_list_ul li {
+        width: 7.2rem;
+    }
+}
+
+.acad_list_sp {
+    height: 16%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 2.2rem;
+}
+
+@media screen and (max-width: 376px) {
+    .acad_list_sp {
+        height: 16%;
+        text-align: center;
+        font-size: 0.7rem;
+        color: #666;
+        line-height: 2.2rem;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+
+/* 合作伙伴样式 */
+
+.cooper_partner {
+    color: #333;
+    line-height: 1.6rem;
+    text-align: center;
+    /* white-space: nowrap; */
+}
+
+@media screen and (min-width: 375px) {
+    .cooper_partner p span {
+        font-size: 0.85rem;
+        display: inline-block;
+        padding: 0 0.2rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cooper_partner p span {
+        font-size: 0.75rem;
+        display: inline-block;
+        padding: 0 0.1rem;
+    }
+}
+
+
+/* <!-- 考研百宝箱下方 搜学校 --> */
+
+.jewel_box_ul {
+    height: 18rem;
+    background: #fff;
+    opacity: 0.7;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: -1.5rem;
+}
+
+.jewel_box_ul li {
+    height: 6rem;
+    width: 6rem;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 376px) {
+    .jewel_box_ul li {
+        height: 5rem;
+        width: 5rem;
+    }
+    .jewel_box_ul li a {
+        font-size: 0.75rem !important;
+    }
+}
+
+.jewel_box_ul li a {
+    color: #000;
+    font-size: 0.95rem;
+}
+
+.jewel_box_ul img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 版权信息 */
+
+.banquan {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+}
