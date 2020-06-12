@@ -77,12 +77,10 @@ li {
 }
 .rightsidebar {
   height: 120px;
-  width: 500px;
   float: right;
 }
 .list_menu {
   font-weight: 600;
-  width: 500px;
   height: 60px;
   line-height: 60px;
   margin-top: 30px;
